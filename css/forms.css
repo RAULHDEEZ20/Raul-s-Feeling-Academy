@@ -1,0 +1,29 @@
+.formulario {
+  margin-top: 1rem;
+}
+
+.campo-formulario {
+  margin-bottom: 1rem;
+}
+
+.campo-formulario label {
+  display: block;
+  color: var(--color-dorado);
+  margin-bottom: 0.5rem;
+}
+
+.campo-formulario input,
+.campo-formulario select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: var(--color-negro);
+  color: var(--color-crema);
+}
+
+.campo-formulario input:focus,
+.campo-formulario select:focus {
+  outline: none;
+  border-color: var(--color-dorado);
+}

@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-dorado: #ffd700;
+  --color-crema: #f5f5dc;
+  --color-negro: #000000;
+  --color-gris-oscuro: #1a1a1a;
+  --color-gris-claro: #cccccc;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-negro);
+  color: var(--color-crema);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

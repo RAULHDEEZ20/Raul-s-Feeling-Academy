@@ -1,0 +1,114 @@
+/* Header */
+.header {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-dorado);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  color: var(--color-crema);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: var(--color-dorado);
+}
+
+/* Menú hamburguesa */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-crema);
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  background-color: var(--color-dorado);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+  background-color: var(--color-dorado);
+}
+
+/* Menu móvil */
+.nav-menu-mobile {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 2rem 1rem;
+  z-index: 99;
+}
+
+.nav-menu-mobile.active {
+  display: block;
+  animation: slideDown 0.3s ease;
+}
+
+.nav-menu-mobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu-mobile li {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.nav-menu-mobile a {
+  color: var(--color-crema);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  display: block;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.nav-menu-mobile a:hover {
+  background: rgba(255, 215, 0, 0.1);
+  color: var(--color-dorado);
+}

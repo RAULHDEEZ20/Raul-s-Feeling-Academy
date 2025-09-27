@@ -1,0 +1,84 @@
+/* Secciones generales */
+.titulo-seccion {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Sección de instrumentos */
+.instrumentos {
+  padding: 4rem 1rem;
+  background-color: var(--color-gris-oscuro);
+}
+
+.grid-instrumentos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.icono-instrumento {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.precio {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-dorado);
+  margin: 1rem 0;
+}
+
+/* Sección Acerca de */
+.acerca {
+  padding: 4rem 1rem;
+  background-color: var(--color-negro);
+}
+
+.contenido-acerca {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.foto-perfil {
+  width: 400px;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.foto-perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Testimonios */
+.testimonios {
+  padding: 4rem 1rem;
+  background-color: var(--color-gris-oscuro);
+}
+
+.grid-testimonios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.estrellas {
+  color: var(--color-dorado);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-negro);
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #333;
+}
